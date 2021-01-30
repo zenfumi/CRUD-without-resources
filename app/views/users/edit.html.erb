@@ -1,5 +1,5 @@
 <p>更新</p>
-<%= form_with model: @user, url: "/users/#{@user.id}", method: :patch, local: true do |f| %>
+<%= form_with model: @user, url: user_path(@user.id), method: :patch, local: true do |f| %>
 <p><%= f.text_field :name %></p>
 <p><%= f.text_field :age %></p>
 <%= f.submit "送信" %>
